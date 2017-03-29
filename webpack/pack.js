@@ -4,7 +4,7 @@ process.env.NODE_PATH = process.cwd() + ':' + process.env.NODE_PATH + ':' + proc
 require("module").Module._initPaths();
 
 if (1 == 1) {  // debug only...
-  console.log("CWD: " +process.cwd());
+  console.log("CWD: " + process.cwd());
   console.log("MAIN: " + require.main.filename);
   console.log("NODE_PATH: " + process.env.NODE_PATH);
   const fs = require('fs');
